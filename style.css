@@ -101,7 +101,8 @@ nav ul li a:hover {
 }
 
 .btn-primary:hover {
-    background: #0ea5b7; /* A slightly darker shade for hover */
+    background: #0ea5b7;
+    /* A slightly darker shade for hover */
     border-color: #0ea5b7;
 }
 
@@ -162,8 +163,15 @@ nav ul li a:hover {
 }
 
 @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .hero h1 {
@@ -251,7 +259,8 @@ nav ul li a:hover {
     background: var(--secondary-bg);
     padding: 15px 20px;
     border-radius: 10px;
-    flex: 1 1 250px; /* Flexbox for responsive columns */
+    flex: 1 1 250px;
+    /* Flexbox for responsive columns */
     text-align: center;
     transition: background var(--transition-speed) ease, color var(--transition-speed) ease;
 }
@@ -349,7 +358,7 @@ nav ul li a:hover {
 
 /* Adds some nice spacing between the text and the button */
 #resume p {
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
 }
 
 /* ============================================= */
