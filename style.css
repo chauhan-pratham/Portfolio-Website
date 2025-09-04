@@ -454,86 +454,103 @@ section {
     background: #0ea5b7;
 }
 
-/* Contact Section */
+/* ============================================= */
+/*                  Contact Section              */
+/* ============================================= */
+
+/*
+  This targets the <section id="contact"> container,
+  giving it the same card-like appearance as other sections.
+*/
 #contact {
-    /* Match other section cards */
     background: rgba(255, 255, 255, 0.02);
-    padding: 40px 20px;
+    padding: 40px;
+    /* Increased padding for better spacing */
     border-radius: 12px;
     margin: 40px auto;
-    max-width: 1100px;
+    /* Optimal width for a form */
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.7);
     text-align: center;
 }
 
+/* Styles the "Contact Me" heading */
 #contact .section-title {
-    color: var(--primary-color);
-    margin-bottom: 10px;
-}
-
-.contact-subtitle {
-    color: #ccc;
-    margin-bottom: 25px;
-    font-size: 1.05rem;
-}
-
-.contact-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 16px;
-    margin-top: 10px;
-}
-
-@media (min-width: 700px) {
-    .contact-grid {
-        grid-template-columns: 1fr 1fr;
-    }
-}
-
-.contact-card {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    text-decoration: none;
-    background: rgba(255, 255, 255, 0.03);
-    border: 1px solid rgba(255, 255, 255, 0.06);
-    border-radius: 10px;
-    padding: 14px 16px;
-    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+    margin-bottom: 30px;
+    /* More space below the title */
     color: var(--text-light);
+    /* Assuming --text-light is your main light text color */
 }
 
-.contact-card:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.35);
-    border-color: rgba(255, 255, 255, 0.12);
-}
-
-.contact-icon {
-    width: 42px;
-    height: 42px;
-    min-width: 42px;
-    display: grid;
-    place-items: center;
-    border-radius: 8px;
-    background: rgba(34, 211, 238, 0.12);
-    color: var(--primary-color);
-}
-
-.contact-content {
+/* The <form> element itself */
+.contact-form {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    gap: 20px;
+    /* Provides space between each form field */
+    text-align: left;
+    /* Aligns labels to the left */
 }
 
-.contact-label {
+/* Container for each label and input pair */
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Styles for the labels (Name, Email, Message) */
+.form-group label {
+    margin-bottom: 8px;
     font-size: 0.9rem;
     color: #a1a1aa;
+    /* A soft, muted color */
+    font-weight: 600;
 }
 
-.contact-value {
-    font-weight: 600;
-    color: var(--text-light);
+/* Common styles for text inputs and the textarea */
+.form-group input,
+.form-group textarea {
+    background-color: rgba(0, 0, 0, 0.2);
+    /* Dark background */
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 8px;
+    padding: 14px;
+    color: #e5e7eb;
+    /* Light text color for typing */
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Style for placeholder text */
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #6b7280;
+}
+
+/* Highlight effect when a user clicks on a form field */
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #22d3ee;
+    /* Using a primary color for focus */
+    box-shadow: 0 0 0 3px rgba(34, 211, 238, 0.2);
+}
+
+/* Ensures the textarea can only be resized vertically */
+.form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+/*
+  Styling for the "Send Message" button.
+  This assumes you have a .btn and .btn-primary class,
+  and it aligns the button to the center.
+*/
+.contact-form button[type="submit"] {
+    align-self: center;
+    margin-top: 10px;
+    min-width: 180px;
 }
 
 
@@ -543,12 +560,33 @@ section {
 
 
 /* Footer */
+/* ============================================= */
+/*                 Footer Section                */
+/* ============================================= */
+
 footer {
-    text-align: center;
-    padding: 20px 24px;
-    background: var(--secondary-bg);
-    font-size: 0.9rem;
-    color: #9ca3af;
+  text-align: center;
+  padding: 40px 20px;
+  margin-top: 50px; /* Adds some space above the footer */
+  border-top: 1px solid rgba(255, 255, 255, 0.08); /* A subtle separator line */
+  color: #a1a1aa; /* A soft, light gray for the text */
+}
+
+footer p {
+  margin: 10px 0;
+  font-size: 0.9rem;
+}
+
+footer a {
+  color: #e5e7eb; /* A brighter white for links, so they stand out */
+  font-weight: 600;
+  text-decoration: none; /* Removes the default underline */
+  transition: color 0.2s ease-in-out;
+}
+
+footer a:hover {
+  color: var(--primary-color); /* Uses your main highlight color on hover */
+  text-decoration: underline; /* Adds an underline on hover for clarity */
 }
 
 /* Anchor offset for fixed header */
