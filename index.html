@@ -38,8 +38,8 @@
         <li><a href="#experience">Experience</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
-        <li><a href="#certifications">Certifications</a></li>
-        <li><a href="#achievements">Achievements</a></li>
+        <li><a href="#certifications-and-achievements">Certifications & Achievements</a></li>
+        <li><a href="#leadership-and-volunteering">Leadership & Volunteering</a></li>
         <li><a href="#resume">Resume</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
@@ -51,7 +51,7 @@
     <section class="hero section-card">
       <div class="hero-content">
         <h1>Pratham Chauhan</h1>
-        <h2>Cybersecurity & Software Development Enthusiast</h2>
+        <h2>Cybersecurity & Backend Development Enthusiast</h2>
         <div class="cta-buttons">
           <a href="#projects" class="btn btn-primary">View Projects</a>
           <a href="resume.pdf" target="_blank" rel="noopener" class="btn btn-outline">Download Resume</a>
@@ -64,9 +64,10 @@
       <h2 class="section-title">About Me</h2>
       <p class="about-intro">
         Final-year Computer Science student at Thapar Institute of Engineering & Technology (TIET). I have explored
-        cybersecurity concepts such as network security and ethical hacking through coursework and training, and built
-        projects in areas like secure logging and data analysis. I enjoy understanding how systems work at a deeper
-        level and applying my learning through practical projects.
+        cybersecurity concepts such as network security and ethical hacking through coursework and training. I enjoy
+        leveraging modern tools to build secure, scalable systems—bridging the gap between core security principles
+        (Cryptography, Network Security) and practical implementation. Currently focused on optimizing data ingestion
+        pipelines and learning distributed systems.
       </p>
     </section>
 
@@ -112,17 +113,28 @@
           <tbody>
             <tr>
               <td>Blockchain Intern</td>
-              <td>TIET (ELC Summer Internship)</td>
+              <td><a href="https://thapar.edu/" target="_blank" rel="noopener noreferrer">TIET (ELC Summer
+                  Internship)</a></td>
               <td>Jun 2025 – Jul 2025</td>
               <td>Engineered a secure logging prototype on the Solana blockchain, implementing Merkle Trees to guarantee
-                tamper-resistant log integrity and data verification.</td>
+                tamper-resistant log integrity and data verification.
+                <br><br>
+                <a href="https://github.com/chauhan-pratham/solana-secure-logging-prototype" target="_blank"
+                  rel="noopener noreferrer">View Github Project</a>
+              </td>
             </tr>
             <tr>
               <td>Cybersecurity Trainee</td>
-              <td>Acmegrade</td>
+              <td><a href="https://www.acmegrade.com/" target="_blank" rel="noopener noreferrer">Acmegrade</a></td>
               <td>Aug 2023 – Oct 2023</td>
               <td>Executed HSTS Hijacking in a simulated MITM attack, configured Bettercap for traffic interception, and
-                automated network sniffing via custom caplets.</td>
+                automated network sniffing via custom caplets.
+                <br><br>
+                <a href="https://drive.google.com/file/d/1pmVzQu2-zZmraiPPThk04rGDl-QTfEWP/view?usp=drive_link"
+                  target="_blank" rel="noopener noreferrer">View Certificate</a> |
+                <a href="https://drive.google.com/file/d/1vo_8lJ8bdXoJXBi5cVjpYEuPIMjUNQlE/view?usp=drive_link"
+                  target="_blank" rel="noopener noreferrer">View Report</a>
+              </td>
             </tr>
           </tbody>
         </table>
@@ -139,7 +151,7 @@
         </div>
         <div class="skill-category">
           <h3>Technologies & Tools</h3>
-          <p>Git, Linux, Flask, Streamlit, Scikit-learn, NLTK, Bettercap, Wireshark</p>
+          <p> Linux, Git, Docker, FastAPI, Prometheus, Flask, Streamlit, Scikit-learn, NLTK, Bettercap, Wireshark</p>
         </div>
         <div class="skill-category">
           <h3>Core Concepts</h3>
@@ -152,28 +164,41 @@
     <section id="projects" class="section-card">
       <h2 class="section-title">Projects</h2>
       <div class="projects-grid">
-        <a href="https://github.com/chauhan-pratham/SMS_Spam_Classifier" target="_blank" rel="noopener noreferrer"
-          class="project-card">
-          <h3>Email/SMS Spam Classifier</h3>
-          <span class="project-date">Aug 2024 – Nov 2024</span>
-          <p>Designed and deployed an NLP-powered spam classifier with a 95% accuracy rate. Engineered a custom data
-            pipeline utilizing TF-IDF and deployed the model with an interactive Streamlit web app.</p>
-          <p><strong>Tech Stack:</strong> Python, Scikit-learn, Streamlit, NLTK</p>
-        </a>
-        <a href="https://github.com/chauhan-pratham/Chat-Minds" target="_blank" rel="noopener noreferrer"
-          class="project-card">
-          <h3>ChatMinds – Flask Chatbot</h3>
+        <div class="project-card">
+          <h3>
+            <a href="https://github.com/chauhan-pratham/Secure-Webhook-Ingestion-API/" target="_blank"
+              rel="noopener noreferrer">Secure Webhook Ingestion API Backend & DevOps</a>
+          </h3>
+          <span class="project-date">Dec 2025 – Jan 2026</span>
+          <p>Implemented a production-grade, containerized API to ingest high-volume messages. Integrated HMAC-SHA256
+            signature validation for security and utilized SQLite constraints to ensure idempotency. Deployed using
+            Docker Compose with Prometheus set up for observability.</p>
+          <p><strong>Tech Stack:</strong> Python, FastAPI, Docker, SQLite</p>
+          <p style="margin-top: 10px;">
+            <a href="https://github.com/chauhan-pratham/Secure-Webhook-Ingestion-API/" target="_blank"
+              rel="noopener noreferrer">View Github Project</a>
+          </p>
+        </div>
+        <div class="project-card">
+          <h3>
+            <a href="https://github.com/chauhan-pratham/Chat-Minds" target="_blank" rel="noopener noreferrer">ChatMinds
+              – Flask Chatbot</a>
+          </h3>
           <span class="project-date">Jan 2024 – May 2024</span>
           <p>Engineered an intent-based chatbot with Flask, utilizing a JSON dialogue management system to provide
             consistent and accurate user responses through a custom-built web UI.</p>
           <p><strong>Tech Stack:</strong> Python, Flask, NLTK, HTML, CSS, JSON</p>
-        </a>
+          <p style="margin-top: 10px;">
+            <a href="https://github.com/chauhan-pratham/Chat-Minds" target="_blank" rel="noopener noreferrer">View
+              Github Project</a>
+          </p>
+        </div>
       </div>
     </section>
 
     <!-- ===== CERTIFICATIONS SECTION ===== -->
-    <section id="certifications" class="section-card">
-      <h2 class="section-title">Certifications</h2>
+    <section id="certifications-and-achievements" class="section-card">
+      <h2 class="section-title">Certifications & Achievements</h2>
       <ul class="list-cards">
         <li class="list-card">
           <div class="list-card-title">
@@ -193,24 +218,35 @@
           </div>
           <div class="list-card-sub">Issued May 2025</div>
         </li>
-      </ul>
-    </section>
-
-    <!-- ===== ACHIEVEMENTS SECTION ===== -->
-    <section id="achievements" class="section-card">
-      <h2 class="section-title">Achievements</h2>
-      <ul class="list-cards">
-        <li class="list-card">
-          <div class="list-card-title">Significant Academic Improvement</div>
-          <div class="list-card-sub">
-            Demonstrated commitment by raising CGPA from 4.77 to 7.15 through dedicated and consistent effort.
-          </div>
-        </li>
         <li class="list-card">
           <div class="list-card-title">Extracurricular Excellence</div>
           <div class="list-card-sub">
             Bronze medalist in district-level Karate and active participant in school plays, developing discipline,
             teamwork, and strong public speaking skills.
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ===== LEADERSHIP & VOLUNTEERING SECTION ===== -->
+    <section id="leadership-and-volunteering" class="section-card">
+      <h2 class="section-title">Leadership & Volunteering</h2>
+      <ul class="list-cards">
+        <li class="list-card">
+          <div class="list-card-title">Organizer & Anchor – Alumni Meet</div>
+          <div class="list-card-title" style="font-size: 0.9rem; font-weight: normal; color: var(--primary-color);">
+            Sunflower Model High School | Nov’23 – Dec’23</div>
+          <div class="list-card-sub">
+            Led and co-hosted the alumni meet with a 4-member team, managing logistics and engaging 100+ attendees.
+          </div>
+        </li>
+        <li class="list-card">
+          <div class="list-card-title">Volunteer – Pratigya Abhiyan</div>
+          <div class="list-card-title" style="font-size: 0.9rem; font-weight: normal; color: var(--primary-color);">
+            Class In-charge | Oct’22 – Present</div>
+          <div class="list-card-sub">
+            Served as Class In-charge for Class 7, managing a team of 30 volunteers. Conducted educational activities
+            for 70+ underprivileged children and organized various events.
           </div>
         </li>
       </ul>
@@ -261,13 +297,13 @@
         </a>
     </section>
 
-  <!-- ===== FOOTER ===== -->
-  <footer>
-    <p> Made with ❤️ by Pratham</p>
-  </footer>
+    <!-- ===== FOOTER ===== -->
+    <footer>
+      <p> Made with ❤️ by Pratham</p>
+    </footer>
 
-  <!-- ===== BACK TO TOP BUTTON ===== -->
-  <a href="#top" class="back-to-top" aria-label="Back to top">&#8593;</a>
+    <!-- ===== BACK TO TOP BUTTON ===== -->
+    <a href="#top" class="back-to-top" aria-label="Back to top">&#8593;</a>
 
 </body>
 
