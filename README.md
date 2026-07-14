@@ -7,7 +7,7 @@
 Welcome to the source code of my personal portfolio website. This site serves as a central hub for my projects, resume, and technical skills.
 
 ## 🚀 Live Demo
-**[Click here to view the live website](https://chauhan-pratham.github.io/Portfolio-Website/)**
+**[Click here to view the live website](https://chauhan-pratham.github.io/portfolio/)**
 
 
 ## 🛠️ Features
