@@ -900,7 +900,7 @@ button:focus-visible {
     gap: var(--space-6);
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1024px) {
     .skills-grid {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -981,7 +981,7 @@ button:focus-visible {
     gap: var(--space-6);
 }
 
-@media (max-width: 900px) {
+@media (max-width: 990px) {
     .projects-grid {
         grid-template-columns: repeat(2, 1fr);
     }
